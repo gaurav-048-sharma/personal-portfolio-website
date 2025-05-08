@@ -102,6 +102,98 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(142, 45, 226, 0.5);
 }
+.resume-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background: #4a00e0;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.resume-button:hover {
+    background: #8e2de2;
+    transform: scale(1.05);
+}
+
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 80%;
+    max-width: 1200px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    min-width: 180px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(142, 45, 226, 0.5);
+}
+
+.skill-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: contain;
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    color: #ddd;
+    max-height: 100px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+    text-decoration: none;
+}
+
+/* Custom Scrollbar for Skill Card Paragraph */
+.skill-card p::-webkit-scrollbar {
+    width: 6px;
+}
+
+.skill-card p::-webkit-scrollbar-track {
+    display: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+
+.skill-card p::-webkit-scrollbar-thumb {
+    display: none;
+    background: #8e2de2;
+    border-radius: 3px;
+}
+
+.skill-card p::-webkit-scrollbar-thumb:hover {
+    background: #572de2;
+}
 
 /* Add or update these in your style.css */
 

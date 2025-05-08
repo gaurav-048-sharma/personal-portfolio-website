@@ -54,5 +54,12 @@
         "image": "assets/project6.jpg",
         "github": "https://github.com/yourusername/project6",
         "website": "https://project6website.com"
+      },
+      {
+        "id": 7,
+        "name": "Project 7",
+        "description": "A chat application using WebSockets.",
+        "image": "assets/project7.jpg",
+        "github": ""
       }
   ]
