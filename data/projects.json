@@ -2,61 +2,61 @@
     {
       "id": 1,
       "name": "Uber",
-      "description": "A modern web app built with React and animations.",
-      "image": "https://dianapps.com/blog/wp-content/uploads/2022/12/1080600.png",
+      "description": "A ride-sharing app with real-time tracking.",
+      "image": "/data/images/1080600.webp",
       "github": "https://github.com/gaurav-048-sharma/uber.git",
       "website": "https://project1website.com"
     },
     {
       "id": 2,
-      "name": "Project 2",
-      "description": "An e-commerce site with a custom CMS.",
-      "image": "assets/project2.jpg",
+      "name": "Airbnb",
+      "description": "A vacation rental platform with user reviews.",
+      "image": "/data/images/airbnb.png",
       "github": "https://github.com/yourusername/project2",
       "website": "https://project2website.com"
     },
     {
       "id": 3,
-      "name": "Project 3",
-      "description": "A portfolio site with 3D animations.",
-      "image": "assets/project3.jpg",
+      "name": "ClipSync",
+      "description": "A video streaming platform with real-time chat.",
+      "image": "/data/images/clipsync.jpeg",
       "github": "https://github.com/yourusername/project3",
       "website": "https://project3website.com"
     },
     {
       "id": 4,
-      "name": "Project 4",
-      "description": "A game built with JavaScript and Canvas.",
-      "image": "assets/project4.jpg",
+      "name": "Chat App",
+      "description": "A chat application using WebSockets.",
+      "image": "/data/images/chatapp.png",
       "github": "https://github.com/yourusername/project4",
       "website": "https://project4website.com"
     },
     {
       "id": 5,
-      "name": "Project 5",
-      "description": "A blog platform with user authentication.",
-      "image": "assets/project5.jpg",
+      "name": "Network Security",
+      "description": "A game built with JavaScript and Canvas.",
+      "image": "/data/images/cybersecutity.jpeg",
       "github": "https://github.com/yourusername/project5",
       "website": "https://project5website.com"
     },
     {
       "id": 6,
-      "name": "Project 6",
-      "description": "A data visualization tool using D3.js.",
-      "image": "assets/project6.jpg",
+      "name": "EliteMart",
+      "description": "An e-commerce site with a custom CMS.",
+      "image": "/data/images/elitemart.png",
       "github": "https://github.com/yourusername/project6",
       "website": "https://project6website.com"
     },
     {
-        "id": 6,
-        "name": "Project 6",
-        "description": "A data visualization tool using D3.js.",
-        "image": "assets/project6.jpg",
+        "id": 7,
+        "name": "Learstream",
+        "description": "A video streaming platform with real-time chat.",
+        "image": "/data/images/learstream.jpeg",
         "github": "https://github.com/yourusername/project6",
         "website": "https://project6website.com"
       },
       {
-        "id": 7,
+        "id": 8,
         "name": "Project 7",
         "description": "A chat application using WebSockets.",
         "image": "assets/project7.jpg",
