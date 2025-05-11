@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     gsap.from(".contact-form > *", {
         scrollTrigger: "#contact",
-        y: 50,
+        y: 0,
         opacity: 1,
         duration: 1,
         stagger: 0.2,
