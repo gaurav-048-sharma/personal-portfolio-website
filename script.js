@@ -180,9 +180,9 @@ document.addEventListener("DOMContentLoaded", () => {
         stagger: 0.2,
         ease: "power2.out"
     });
-    gsap.from(".contact-form > *", {
+    gsap.from(".contact-form, .form-input > *", {
         scrollTrigger: "#contact",
-        y: 0,
+        y: 50,
         opacity: 1,
         duration: 1,
         stagger: 0.2,
