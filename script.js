@@ -109,36 +109,63 @@ document.addEventListener("DOMContentLoaded", () => {
             navMenu.classList.remove("nav-active");
         });
     });
-
+    
     // EmailJS Form Submission
     const form = document.getElementById("contact-form");
     const formMessage = document.getElementById("form-message");
 
     const script = document.createElement("script");
     script.src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js";
+    script.onerror = () => {
+        formMessage.textContent = "Failed to load EmailJS. Please try again later.";
+        //console.error("Failed to load EmailJS script");
+    };
     script.onload = () => {
-        emailjs.init("ITC_rW9nWH9c0xcy3");
+        try {
+            emailjs.init("ITC_rW9nWH9c0xcy3");
+            console.log("EmailJS initialized successfully");
+        } catch (error) {
+            formMessage.textContent = "Failed to initialize EmailJS. Please try again.";
+            console.error("EmailJS initialization error:", error);
+        }
     };
     document.body.appendChild(script);
 
     form.addEventListener("submit", (e) => {
         e.preventDefault();
         const formData = {
-            name: form.name.value,
-            phone: form.phone.value,
-            email: form.email.value,
-            message: form.message.value
+            name: form.name.value.trim(),
+            phone: form.phone.value.trim(),
+            email: form.email.value.trim(),
+            message: form.message.value.trim()
         };
-        emailjs.send("service_ons9ny8", "template_q5uxa9f", formData)
-            .then(() => {
+
+        // Validate form data
+        if (!formData.name || !formData.email || !formData.message) {
+            formMessage.textContent = "Please fill in all required fields (Name, Email, Message).";
+            formMessage.style.color = "#ff0000";
+            return;
+        }
+
+        // Log form data for debugging
+        console.log("Form data being sent:", formData);
+
+        emailjs.send("service_ons9ny8", "template_eo27rai", formData)
+            .then((response) => {
+                //console.log("Email sent successfully:", response.status, response.text);
                 formMessage.textContent = "Message sent successfully!";
                 formMessage.style.color = "#8e2de2";
                 form.reset();
                 setTimeout(() => formMessage.textContent = "", 3000);
             })
             .catch((error) => {
+                //console.error("EmailJS send error:", error);
                 formMessage.textContent = "Failed to send message. Please try again.";
-                console.error("EmailJS error:", error);
+                formMessage.style.color = "#ff0000";
+                // Provide more specific error details if available
+                if (error.text) {
+                    console.error("Error details:", error.text);
+                }
             });
     });
 });
