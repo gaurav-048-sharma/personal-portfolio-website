@@ -34,7 +34,7 @@
     {
       "id": 5,
       "name": "Network Security",
-      "description": "A game built with JavaScript and Canvas.",
+      "description": "It surf through internet and detects incoming and outgoing malwares.",
       "image": "/data/images/cybersecutity.jpeg",
       "github": "https://github.com/yourusername/project5",
       "website": "https://project5website.com"
@@ -54,5 +54,13 @@
         "image": "/data/images/learstream.jpeg",
         "github": "https://github.com/yourusername/project6",
         "website": "https://project6website.com"
-      }
+    },
+    {
+      "id": 8,
+      "name": "FlickStream",
+      "description": "A video streaming platform built using HTML, CSS and JS",
+      "image": "/data/images/flick.png",
+      "github": "https://github.com/gaurav-048-sharma/FlickStream.git",
+      "website": "https://gaurav-048-sharma.github.io/FlickStream/"
+    }
   ]
